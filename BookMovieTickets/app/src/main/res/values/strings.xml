@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Book Movie Tickets</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_movie_details">MovieDetails</string>
+    <string name="title_activity_my_list_tickets">Booked Movies</string>
+    <string name="title_activity_login_form">LOG IN</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_register_form">SIGN UP</string>
+
+    <string name="nick_name">Username</string>
+    <string name="password">Password</string>
+    <string name="remember_me">remember me</string>
+    <string name="password_confirmation">Confirm Password</string>
+    <string name="title_activity_history">Favorite List</string>
+    <string name="title_activity_user_profile">UserProfile</string>
+</resources>

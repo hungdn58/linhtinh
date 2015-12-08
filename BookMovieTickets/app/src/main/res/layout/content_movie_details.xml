@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_movie_details"
+    android:orientation="vertical"
+    android:background="@android:color/background_light"
+    android:weightSum="20"
+    tools:context="com.example.hoang.bookmovietickets.Activity.MovieDetails">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/movieTitle"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="#00BCD4"
+        android:textColor="#fff"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="19"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:weightSum="10">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:id="@+id/movieImage"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/rating"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:numStars="5"
+            android:stepSize="0.1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="4"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@drawable/btn_background"
+                android:text="Book Tickets"
+                android:id="@+id/btnBookTicket"/>
+            <ToggleButton
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:id="@+id/btnFavorite"
+                android:background="@drawable/favorite_check"
+                android:textOn=""
+                android:textOff=""
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_alignParentRight="true"/>
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="13">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:id="@+id/movieDes"/>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
